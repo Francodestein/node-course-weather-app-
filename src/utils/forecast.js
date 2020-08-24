@@ -10,6 +10,7 @@ const weatherAPI = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback("Unable to find the location! Try another search.", undefined)
         } else {
+            // console.log(body.current)
             callback(undefined, {
                 forecast: body.current.weather_descriptions[0],
                 temperature: body.current.temperature,
