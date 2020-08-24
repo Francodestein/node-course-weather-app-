@@ -22,7 +22,8 @@ weatherForm.addEventListener("submit", (e) => {
                 messageTwo.html(data.error)
             } else {
                 messageOne.html("")
-                messageTwo.html(data.location + " is " + data.forecast + " and " + data.temperature + "C degrees.")
+                messageTwo.html(data.location + " is " + data.forecast + " and " + data.temperature + "C degrees. It feels like " + data.feelslike + "C degrees.")
+                // console.log(data)
             }
         })
     })
